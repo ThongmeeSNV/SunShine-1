@@ -337,7 +337,7 @@ public class ForecastFragment extends Fragment {
 
                     mForecastAdapter.add(dayForecastStr);
 
-helloo
+
 
 
                 }
