@@ -76,7 +76,7 @@ public class ForecastFragment extends Fragment {
 
 
             FetchWeatherTask weatherTask = new FetchWeatherTask();
-            weatherTask.execute("vientiane");
+            weatherTask.execute("94043");
 
             return true;
 
@@ -111,7 +111,8 @@ public class ForecastFragment extends Fragment {
                 Arrays.asList(ForecastArray));
 
 
-        mForecastAdapter = new ArrayAdapter<String>(
+
+        mForecastAdapter = new ArrayAdapter<>(
 
                 getActivity(),
 
@@ -223,6 +224,9 @@ public class ForecastFragment extends Fragment {
             }
 
 
+            Log.v(LOG_TAG, "resultStrs" + resultStrs[1]);
+
+
             return resultStrs;
         }
 
@@ -311,9 +315,13 @@ public class ForecastFragment extends Fragment {
             }
 
             try {
+
+                return
                 getWeatherDataFromJson(forecastJsonStr, numDays);
 
-                Log.v(LOG_TAG, "JSON dATA " + forecastJsonStr);
+
+
+
 
             } catch (JSONException e) {
 
@@ -338,13 +346,14 @@ public class ForecastFragment extends Fragment {
                     mForecastAdapter.add(dayForecastStr);
 
 
+                    Log.v(LOG_TAG, "JSON strings " + dayForecastStr);
+
 
 
                 }
 
             }
 
-            Log.v(LOG_TAG, "JSON strings " + strings);
 
 
             super.onPostExecute(strings);
