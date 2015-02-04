@@ -22,6 +22,10 @@ public class SettingsActivity extends PreferenceActivity implements Preference.O
         // TODO: Add preferences
 
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key))); // เพื่อ refresh โตเองเมื่อเลือกปะเทดแล้ว
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_unit_key))); // เพื่อ refresh โตเองเมื่อเลือกปะเทดแล้ว
+
+
+
     }
 
     /**
