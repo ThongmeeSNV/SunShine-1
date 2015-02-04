@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">SunShine</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -6,5 +8,12 @@
     <string name="temperature">26°</string>
     <string name="weather">Cloudy</string>
     <string name="forecast">Today-Sunny-88 / 63</string>
-    <string name="refresh" >Refresh</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_key">Location</string>
+    <string name="pref_location_default">94043</string>
+
 </resources>
