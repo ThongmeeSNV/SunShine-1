@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
             ab.setIcon(R.drawable.ic_action_sun);
 
         }
-    }
+    } he
 
 
     @Override
