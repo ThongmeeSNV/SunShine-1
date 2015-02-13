@@ -26,6 +26,9 @@ import com.example.tams1993.sunshine.data.WeatherContract.LocationEntry;
 import com.example.tams1993.sunshine.data.WeatherContract.WeatherEntry;
 import com.example.tams1993.sunshine.data.WeatherDbHelper;
 
+import java.util.Map;
+import java.util.Set;
+
 public class TestDb extends AndroidTestCase {
 
     public static final String LOG_TAG = TestDb.class.getSimpleName();
@@ -137,9 +140,8 @@ public class TestDb extends AndroidTestCase {
     }
 
 
-    /* TODO Uncomment for
-    4a - Simplify Tests
-    https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/e-1633698607/m-1615128666
+
+
     static ContentValues createWeatherValues(long locationRowId) {
         ContentValues weatherValues = new ContentValues();
         weatherValues.put(WeatherEntry.COLUMN_LOC_KEY, locationRowId);
@@ -184,5 +186,5 @@ public class TestDb extends AndroidTestCase {
 
     static final String TEST_LOCATION = "99705";
     static final String TEST_DATE = "20141205";
-    */
+
 }
